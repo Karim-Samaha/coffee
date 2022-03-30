@@ -1,0 +1,247 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave&display=swap"
+        rel="stylesheet">
+
+    <title>Coffee</title>
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <section class="navbar">
+        <div class="nav-sectionOne">
+            <img src="./assets/logo.png" alt="Logo">
+        </div>
+        <div class="nav-sectionTwo">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <svg class="sidebarClose" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z">
+                    </path>
+                </svg>
+            </ul>
+        </div>
+        <div class="nav-sectionThree">
+            <div class="nav-icon">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+                    </path>
+                </svg>
+            </div>
+            <div class="nav-icon cart">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M922.9 701.9H327.4l29.9-60.9 496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9-56.4 315.8-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z">
+                    </path>
+                </svg>
+            </div>
+            <div class="nav-icon sidebarOpen">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!--Hero-->
+    <section class="hero">
+        <img src="./assets/hero.jpeg" alt="Main pic">
+        <div class="text-container">
+            <h1>FRESH COFFEE <br /> IN THE MORNING</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                commodo vitae metus. Phasellus efficitur.
+            </p>
+            <button>Git It Now</button>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="about">
+        <h2 class="title"><span>ABOUT</span> US</h2>
+        <div class="about-container">
+            <img src="./assets/about.jpeg" alt="img">
+            <div class="about-info">
+                <h2>What Makes Our Coffee Spicial?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                    commodo vitae metus. Phasellus efficitur,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                    commodo vitae metus. Phasellus efficitur.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                    commodo vitae metus. Phasellus efficitur.
+                </p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <!--Menu-->
+    <section id="menu" class="menu">
+        <h2 class="title">OUR <span>MENU</span></h2>
+        <div class="products">
+        </div>
+    </section>
+    <!--Latest Product-->
+    <section id="products" class="latestProducts">
+        <h2>LATEST <span>PRODUCTS</span></h2>
+        <div class="latestProduct-container"></div>
+    </section>
+    <!--Reviews-->
+    <section id="review" class="reviews">
+        <h2>Customer's <span>Reviews</span></h2>
+        <div class="review-Container">
+            <div class="review">
+                <img class="quateImg" src="./assets/quote-img.png" alt="quates">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                    commodo vitae metus. Phasellus efficitur,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                    commodo vitae metus. Phasellus efficitur.
+                </p>
+                <img class="personImg" src="./assets/pic-1.png" alt="Person">
+                <h5>James Garry</h5>
+            </div>
+            <div class="review">
+                <img class="quateImg" src="./assets/quote-img.png" alt="quates">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                    commodo vitae metus. Phasellus efficitur,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                    commodo vitae metus. Phasellus efficitur.
+                </p>
+                <img class="personImg" src="./assets/pic-2.png" alt="Person">
+                <h5>Anna Taylor</h5>
+            </div>
+            <div class="review">
+                <img class="quateImg" src="./assets/quote-img.png" alt="quates">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                    commodo vitae metus. Phasellus efficitur,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula, aliquam a faucibus quis,
+                    commodo vitae metus. Phasellus efficitur.
+                </p>
+                <img class="personImg" src="./assets/pic-3.png" alt="Person">
+                <h5>Harold Brown</h5>
+            </div>
+        </div>
+    </section>
+    <!--Contact-->
+    <section id="contact" class="contact">
+        <h2><span>Contact</span> Us</h2>
+        <div class="contact-container">
+            <div class="sectionOne">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.729216141254!2d-83.23442131495504!3d42.198856953259856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b3775c1a82759%3A0x92bc84612a0d0f5c!2sCoffee%20Store!5e0!3m2!1sar!2seg!4v1648436438375!5m2!1sar!2seg"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="sectionTwo">
+                <h3>GET IN TOUCH</h3>
+                <form class="contactForm">
+                    <input required type="text" placeholder="Your Name" />
+                    <input required type="text" placeholder="Email Adress" />
+                    <input required type="tel" placeholder="Phone Number" />
+                    <input class="submitButton" type="submit" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Blogs-->
+    <section id="blogs" class="blogs">
+        <h2>OUR <span>BLOGS</span></h2>
+        <div class="blogs-container">
+            <div class="blog-item">
+                <img src="./assets/blog-1.jpeg" alt="blog img">
+                <h3>Tasty and Refreshing Coffee</h3>
+                <h4>By Admin / 1st Septmper, 2020</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula,
+                    aliquam a faucibus quis.
+                </p>
+                <button class="addToCart">Read More</button>
+            </div>
+            <div class="blog-item">
+                <img src="./assets/blog-2.jpeg" alt="blog img">
+                <h3>Tasty and Refreshing Coffee</h3>
+                <h4>By Admin / 1st May, 2021</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula,
+                    aliquam a faucibus quis.
+                </p>
+                <button class="addToCart">Read More</button>
+            </div>
+            <div class="blog-item">
+                <img src="./assets/blog-3.jpeg" alt="blog img">
+                <h3>Tasty and Refreshing Coffee</h3>
+                <h4>By Admin / 1st March, 2022</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sem ligula,
+                    aliquam a faucibus quis.
+                </p>
+                <button class="addToCart">Read More</button>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="icons">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em"
+                width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                </path>
+            </svg>
+            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+            </svg>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+                width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94 336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z">
+                </path>
+            </svg>
+        </div>
+        <ul class="footerLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+        </ul>
+        <p>&copy; All Rights Reserved</p>
+    </footer>
+    <!--Cart Moudle-->
+    <section class="cartMoudle">
+
+    </section>
+    <!--Added To Cart mssg-->
+    <div class="msg-Container">
+        <p>
+            The Item as been added to your cart
+        </p>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
